@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog Personal">
+    <link rel="icon" type="image/webp" href="https://microblog.lexingtonthemes.com/_astro/5.hpujJxhC_1Rv89X.webp">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js"></script>
+    <title>Blog's Nahuel</title>
+</head>
+<body>
+    <header class="navegacion">
+        <h1>Blog's Nahuel</h1>
+        <nav>
+            <a href="#articulos">Articulos</a>
+            <a href="#contacto">Contacto</a>
+            <a href="https://developer.mozilla.org/en-US/" target="_blank" rel="noreferrer">Mozilla mdn</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="title">Contruyendo blog personal</h2>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore ea <strong>una palabra</strong> consectetur tempore necessitatibus quas, incidunt adipisci, sapiente vitae provident alias harum. Et sapiente non laborum explicabo autem ea provident ut. 
+        </p>
+        <ul class="lista">
+            <li style="--color-custom: blue;">Frameworks</li>
+            <li>Devekioment</li>
+            <li>CDN</li>
+            <li>ARIA</li>
+            <li>Animation</li>
+            <li>HTML</li>
+            <li>Tailwind</li>
+            <li>SVG</li>
+        </ul>
+        <section id="articulos">
+            <article>
+                <header>
+                    <img src="./img/6.Dsq_1pG4_14nmYx.webp" alt="Manos blancas roboticas sobre teclado" width="300" height="180">
+                </header>
+                <div>
+                    <h4>Ayudando a tu website tener googly-eyed</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex laborum vero corporis, numquam dicta unde.</p>
+                </div>
+                <footer>
+                    <small>Henry Lee - Sat Jan 06</small>
+                </footer>
+            </article>
+
+            <article class="destacado">
+                <header>
+                    <img src="./img/5.hpujJxhC_aTyn5.webp" alt="Manos blancas roboticas sobre teclado" width="300" height="180">
+                </header>
+                <div>
+                    <h4>Ayudando a tu website tener googly-eyed</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex laborum vero corporis, numquam dicta unde.</p>
+                </div>
+                <footer>
+                    <small>Henry Lee - Sat Jan 06</small>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <img src="./img/4.KHEarGYS_2crxEh.webp" alt="Manos blancas roboticas sobre teclado" width="300" height="180">
+                </header>
+                <div>
+                    <h4>Ayudando a tu website tener googly-eyed</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex laborum vero corporis, numquam dicta unde.</p>
+                </div>
+                <footer>
+                    <small>Franz Hermann - Sat Jan 06</small>
+                </footer>
+            </article>
+            <article>
+                <header>
+                    <img src="./img/6.Dsq_1pG4_14nmYx.webp" alt="Manos blancas roboticas sobre teclado" width="300" height="180">
+                </header>
+                <div>
+                    <h4>Ayudando a tu website tener googly-eyed</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex laborum vero corporis, numquam dicta unde.</p>
+                </div>
+                <footer>
+                    <small>Henry Lee - Sat Jan 06</small>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <img src="./img/5.hpujJxhC_aTyn5.webp" alt="Manos blancas roboticas sobre teclado" width="300" height="180">
+                </header>
+                <div>
+                    <h4>Ayudando a tu website tener googly-eyed</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex laborum vero corporis, numquam dicta unde.</p>
+                </div>
+                <footer>
+                    <small>Henry Lee - Sat Jan 06</small>
+                </footer>
+            </article>
+
+            <article class="destacado">
+                <header>
+                    <img src="./img/4.KHEarGYS_2crxEh.webp" alt="Manos blancas roboticas sobre teclado" width="300" height="180">
+                </header>
+                <div>
+                    <h4>Ayudando a tu website tener googly-eyed</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex laborum vero corporis, numquam dicta unde.</p>
+                </div>
+                <footer>
+                    <small>Franz Hermann - Sat Jan 06</small>
+                </footer>
+            </article>
+        </section>
+
+        <section >
+            <h3>Formulario de Contacto</h3>
+            <form method="post" action="/">
+                <fieldset>
+                    <legend>Informacion Personal</legend>
+                    <label>
+                        <span>Nombre:</span>
+                        <input type="text" name="nombre" placeholder="Ingresa tu nombre" required>
+                    </label>
+
+                    <label>
+                        <span>Email:</span>
+                        <input type="email" name="email" placeholder="Ingresa tu email" required>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Informacion adicional</legend>
+                    <label>
+                        <span>Telefono:</span>
+                        <input type="tel" name="tel" placeholder="" required pattern="[0-9]{9}">
+                    </label>
+                    <label>
+                        <span>Fecha de nacimiento:</span>
+                        <input type="date" name="fechaNacimiento" required>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Otros</legend>
+                    <div>
+                        <label for="motivo">
+                            Motivo
+                        </label>
+                        <select name="motivo" id="motivo">
+                            <option>Trabajo</option>
+                            <option>Estudio</option>
+                            <option>Otros</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="lenguajes-id">Sobre que lenguaje?</label>
+                        <input name="lenguajes" id="lenguajes-id" list="list-lenguajes">
+                        <datalist id="list-lenguajes">
+                            <option value="Javascript"></option>
+                            <option value="Python"></option>
+                            <option value="Typescript"></option>
+                            <option value="PHP"></option>
+                        </datalist>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Enviar</legend>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Reset</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2025 - Blog personal</p>
+    </footer>
+</body>
+</html>
