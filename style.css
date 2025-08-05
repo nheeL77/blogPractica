@@ -5,34 +5,40 @@ body {
 }
 
 .navegacion {
-
     background-color:lightblue;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont;
+    justify-content: space-between;
+    font-family:'Trebuchet MS', sans-serif;
+}
+
+.navegacion h1 {
+    margin: 2%;
 }
 
 nav {
-    display: flex;
-    gap: 10px;
+margin: 0 40% 0 0;
 }
 
 nav a {
     color: blue;
     text-decoration: none;
-    border-bottom:1px gray solid;
+}
+
+nav a:first-child {
+    border-bottom:1px blue solid;
 }
 
 nav a:hover{
-    font-size: 18px;
+    font-size: 17px;
+    border-bottom:1px blue solid;
 }
 nav a:active{
-    background-color: green;
+    background-color: grey;
 }
 
 main {
-    font-family:'Lucida Sans', Arial;
+    font-family:'Trebuchet MS', sans-serif;
     padding: 15px;
     max-width: 1200px;
     margin: 0 auto;
@@ -59,15 +65,15 @@ main > .title {
 }
 
 .lista li {
-    background-color: rgba(29, 106, 1, 0.837);
+    background-color: rgba(154, 162, 164, 0.754);
     color:var(--color-custom, #f0f0f0);
     font-weight: 600;
     letter-spacing: 1.3px;
-    padding: 10px 20px;
-    border-radius: 30px;
+    padding: 9px 20px;
+    border-radius: 40px;
     border-width: 2px;
-    border-color: rgb(18, 66, 0);
-    border-style: dotted;
+    border-color: rgba(169, 169, 169, 0.737);
+    border-style:groove;
 }
 
 #articulos {
