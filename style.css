@@ -22,22 +22,19 @@ body {
 .navegacion {
     background-color:var(--color-principal);
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
     box-shadow: 0 5px 5px rgba(182, 182, 182, 0.784);
-}
-
-.navegacion h1 {
-    margin: 2%;
+    padding: 15px 15px 7px 15px;
 }
 
 nav {
-margin: 0 40% 0 0;
+    align-self: center;
 }
 
 nav a {
     color: blue;
     text-decoration: none;
+    margin: 0 9px;
 }
 
 nav a:hover{
@@ -254,4 +251,13 @@ color: rgba(197, 197, 197, 0.858);
 
 .buttones button:active{
     background-color: var(--color-border);
+}
+
+.piedePagina {
+    background-color: var(--color-principal);
+    padding: 16px;
+}
+
+footer p {
+    font-size: small;
 }
