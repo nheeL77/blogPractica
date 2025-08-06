@@ -2,10 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:  "Inter", sans-serif;    
 }
 
 :root{
-    --font-family:  Inter, sans-serif;
+    --color-principal: oklch(86.995% 0.0001 271.152);
+    --color-shadow:  rgba(182, 182, 182, 0.784);
+    --color-buttons: rgba(154, 162, 164, 0.754);
+    --color-border:  rgba(128, 128, 128, 0.213);
+    --color-title: rgba(0, 0, 0, 0.654);
 }
 
 body {
@@ -15,11 +20,11 @@ body {
 }
 
 .navegacion {
-    background-color:lightblue;
+    background-color:var(--color-principal);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: var(--font-family);
+    box-shadow: 0 5px 5px rgba(182, 182, 182, 0.784);
 }
 
 .navegacion h1 {
@@ -35,29 +40,26 @@ nav a {
     text-decoration: none;
 }
 
-nav a:first-child {
-    border-bottom:1px blue solid;
+nav a:hover{
+    border-bottom:1px blue dotted;
 }
 
-nav a:hover{
-    font-size: 17px;
-    border-bottom:1px blue solid;
-}
 nav a:active{
-    background-color: grey;
+    color: grey;
 }
 
 main {
-    font-family:var(--font-family);
     padding: 15px;
     max-width: 1200px;
     margin: 0 auto;
-    
+}
+
+main p {
+    padding-top: 10px;
 }
 
 main > .title {
     font-size: 24px;
-    text-shadow: 2px 0px 0px rgba(105, 105, 105, 0.619);
 }
 
 .description {
@@ -72,18 +74,24 @@ main > .title {
     flex-wrap: wrap;
     gap: 10px 20px;
     padding: 0;
-    margin-block: 30px; /*arriba y abajo*/
+    margin-block: 30px; /*arriba y abajo */
     justify-content: center;
 }
 
 .lista li {
-    background-color: rgba(154, 162, 164, 0.754);
-    color:var(--color-custom, #f0f0f0);
+    background-color: var(--color-buttons);
+    color: #f0f0f0;
     font-weight: 600;
-    letter-spacing: 1.3px;
     padding: 9px 20px;
     border-radius: 40px;
-    border: 2px outset rgba(169, 169, 169, 0.737); 
+    border: 2px solid var(--color-border); 
+    margin: auto;
+}
+
+.lista li:hover {
+    border: 2px outset rgba(128, 128, 128, 0.654);
+    color: rgba(0, 0, 0, 0.654);
+    cursor: pointer;
 }
 
 #articulos {
@@ -135,16 +143,19 @@ article footer {
 }
 
 .formulario {
-    background-color: oklch(82.032% 0.00009 271.152);
+    background-color: var(--color-buttons);
     border-radius: 35px;
     padding: 15px;
-    font-family: var(--font-family);
     max-width: 600px;
     margin: auto;
 }
 
 .formulario h3 {
     margin: 7px 0 10px 20px;
+}
+
+.formulario span {
+    font-size: 14px;
 }
 
 .formulario form {
@@ -163,8 +174,8 @@ article footer {
 .formulario p {
     margin: 10px 0;
     font-weight: 600;
-    color: #818181;
-    border-bottom: 1px rgba(128, 128, 128, 0.322) inset;
+    color: var(--color-title);
+    border-bottom: 1px var(--color-border) inset;
 }
 
 .formulario label {
@@ -172,14 +183,19 @@ article footer {
     flex-direction: column;
     gap: 6px;
     margin-bottom: 5px;
+    font-size: 14px;
 }
 
 .formulario fieldset input {
     border-radius: 20px;
     height: 25px;
-    border:0.5px rgba(128, 128, 128, 0.213) inset;
+    border:0.5px var(--color-border) inset;
     max-width: 300px;
     padding: 15px 0 15px 15px;
+}
+
+.date {
+    color: rgba(197, 197, 197, 0.858);
 }
 
 .formulario fieldset input::placeholder{
@@ -188,10 +204,11 @@ color: rgba(197, 197, 197, 0.858);
 
 .formulario fieldset select {
     border-radius: 20px;
-    border:0.5px solid gray;
+    border:0.5px solid var(--color-border);
     width: 100%;
     min-width: 200px;
-    padding: 7px 0;
+    padding: 7px 7px;
+    color: rgba(197, 197, 197, 0.858);
 }
 
 .containerForm {
@@ -210,23 +227,31 @@ color: rgba(197, 197, 197, 0.858);
 
 .buttones button {
     margin: 10px 0;
-    padding: 10px 0;
+    padding: 8px 0;
     border-radius: 20px;
     width: 100%;
     max-width: 150px;
-    border:0.5px s gray;
-    background-color: #d0d0d0ae;
+    border:0.5px solid var(--color-border);
+    background-color: var(--color-buttons);
     transition: background-color 200ms ease;
+    color: #f0f0f0;
+    font-size: 16px;
 }
 
-.buttones button:hover{
-    background-color: gray;
+.buttones button[type="submit"]:hover{
+    border: 1px outset rgba(128, 128, 128, 0.654);
+    color: green;
+    cursor: pointer;
+    font-weight: 500;
 }
 
-.buttones button[type="submit"]:active{
-    background-color: rgba(1, 142, 1, 0.643);
+.buttones button[type="reset"]:hover{
+    border: 1px outset rgba(128, 128, 128, 0.654);
+    color: red;
+    cursor: pointer;
+    font-weight: 500;
 }
 
-.buttones button[type="reset"]:active{
-    background-color: rgba(227, 1, 1, 0.764);
+.buttones button:active{
+    background-color: var(--color-border);
 }
