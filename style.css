@@ -1,3 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font-family:  Inter, sans-serif;
+}
+
 body {
     background-color: #f0f0f0;
     margin: 0;
@@ -9,7 +19,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family:'Trebuchet MS', sans-serif;
+    font-family: var(--font-family);
 }
 
 .navegacion h1 {
@@ -38,10 +48,11 @@ nav a:active{
 }
 
 main {
-    font-family:'Trebuchet MS', sans-serif;
+    font-family:var(--font-family);
     padding: 15px;
     max-width: 1200px;
     margin: 0 auto;
+    
 }
 
 main > .title {
@@ -62,6 +73,7 @@ main > .title {
     gap: 10px 20px;
     padding: 0;
     margin-block: 30px; /*arriba y abajo*/
+    justify-content: center;
 }
 
 .lista li {
@@ -71,25 +83,19 @@ main > .title {
     letter-spacing: 1.3px;
     padding: 9px 20px;
     border-radius: 40px;
-    border-width: 2px;
-    border-color: rgba(169, 169, 169, 0.737);
-    border-style:groove;
+    border: 2px outset rgba(169, 169, 169, 0.737); 
 }
 
 #articulos {
     display: grid;
     gap: 23px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
     margin-bottom: 50px;
-}
-
-.destacado {
-    grid-column: span 2;
+    justify-content: center;
 }
 
 article {
-    background-color: rgb(232, 232, 232);
+    background-color: rgb(243, 243, 243);
     border-radius: 6px;
     overflow: hidden;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.298);
@@ -126,4 +132,101 @@ article div p{
 article footer {
     padding: 6px 20px;
     color: rgb(29, 29, 121);
+}
+
+.formulario {
+    background-color: oklch(82.032% 0.00009 271.152);
+    border-radius: 35px;
+    padding: 15px;
+    font-family: var(--font-family);
+    max-width: 600px;
+    margin: auto;
+}
+
+.formulario h3 {
+    margin: 7px 0 10px 20px;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formulario fieldset{
+    border-style: none;
+    background-color: #f0f0f0;
+    border-radius: 25px;
+    padding:0 20px;
+}
+
+.formulario p {
+    margin: 10px 0;
+    font-weight: 600;
+    color: #818181;
+    border-bottom: 1px rgba(128, 128, 128, 0.322) inset;
+}
+
+.formulario label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 5px;
+}
+
+.formulario fieldset input {
+    border-radius: 20px;
+    height: 25px;
+    border:0.5px rgba(128, 128, 128, 0.213) inset;
+    max-width: 300px;
+    padding: 15px 0 15px 15px;
+}
+
+.formulario fieldset input::placeholder{
+color: rgba(197, 197, 197, 0.858);
+}
+
+.formulario fieldset select {
+    border-radius: 20px;
+    border:0.5px solid gray;
+    width: 100%;
+    min-width: 200px;
+    padding: 7px 0;
+}
+
+.containerForm {
+    display: flex;
+    gap: 8px 30px;
+    margin-bottom: 7px;
+    flex-wrap: wrap;
+
+}
+
+.buttones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.buttones button {
+    margin: 10px 0;
+    padding: 10px 0;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 150px;
+    border:0.5px s gray;
+    background-color: #d0d0d0ae;
+    transition: background-color 200ms ease;
+}
+
+.buttones button:hover{
+    background-color: gray;
+}
+
+.buttones button[type="submit"]:active{
+    background-color: rgba(1, 142, 1, 0.643);
+}
+
+.buttones button[type="reset"]:active{
+    background-color: rgba(227, 1, 1, 0.764);
 }
