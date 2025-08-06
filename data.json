@@ -1,0 +1,40 @@
+{
+  "articulos": [
+    {
+      "titulo": "La revolución de la nube: Más allá del almacenamiento",
+      "informacion_it": "La tecnología cloud ha evolucionado de ser una simple solución de almacenamiento a convertirse en el corazón de la innovación. Hoy en día, la **computación en la nube** (o *cloud computing*) no solo nos permite guardar archivos de forma remota, sino que también impulsa aplicaciones, servicios de *machine learning* y plataformas de colaboración a escala global. Empresas de todos los tamaños están migrando sus infraestructuras para aprovechar su flexibilidad, escalabilidad y reducción de costos operativos. La nube es la base sobre la que se construye el futuro digital, permitiendo a las organizaciones adaptarse rápidamente a las demandas del mercado.",
+      "autor": "Alejandro Torres",
+      "fecha": "6 de agosto de 2025"
+    },
+    {
+      "titulo": "Ciberseguridad: Un escudo esencial en la era digital",
+      "informacion_it": "En un mundo cada vez más conectado, la **ciberseguridad** se ha vuelto crucial. Las amenazas digitales, como el *phishing*, el *ransomware* y los ataques de denegación de servicio (DDoS), están en constante evolución. Proteger los datos y la infraestructura tecnológica ya no es solo una tarea del departamento de IT, sino una responsabilidad de toda la organización. Invertir en soluciones de seguridad robustas, educar a los empleados sobre buenas prácticas y tener un plan de respuesta a incidentes son pasos fundamentales para mitigar riesgos y mantener la confianza de los usuarios.",
+      "autor": "Sofía Mendoza",
+      "fecha": "6 de agosto de 2025"
+    },
+    {
+      "titulo": "Inteligencia artificial (IA) en la empresa: Del concepto a la realidad",
+      "informacion_it": "La **inteligencia artificial (IA)** ha dejado de ser una promesa futurista para convertirse en una herramienta práctica que está transformando industrias. Desde chatbots que mejoran el servicio al cliente hasta algoritmos que optimizan la cadena de suministro, la IA está ayudando a las empresas a tomar decisiones más inteligentes y a automatizar procesos repetitivos. Su aplicación en el análisis de datos masivos (o *big data*) permite identificar patrones y tendencias que antes eran imposibles de detectar, lo que genera una ventaja competitiva significativa.",
+      "autor": "Carlos Ruiz",
+      "fecha": "6 de agosto de 2025"
+    },
+    {
+      "titulo": "El auge del trabajo híbrido y las herramientas de colaboración",
+      "informacion_it": "La pandemia aceleró la adopción de modelos de **trabajo híbrido**, combinando días en la oficina con trabajo remoto. Este cambio ha impulsado la demanda de **herramientas de colaboración** que permitan a los equipos mantenerse productivos sin importar su ubicación. Plataformas como Slack, Microsoft Teams y Google Workspace se han vuelto indispensables para la comunicación, la gestión de proyectos y la coordinación en tiempo real. La clave está en elegir las herramientas adecuadas para mantener la cohesión del equipo y garantizar un flujo de trabajo sin interrupciones.",
+      "autor": "Laura Pérez",
+      "fecha": "6 de agosto de 2025"
+    },
+    {
+      "titulo": "El Internet de las cosas (IoT): Conectando nuestro mundo",
+      "informacion_it": "El **Internet de las cosas (IoT)** se refiere a la red de dispositivos físicos (desde electrodomésticos hasta sensores industriales) que están conectados a internet para recolectar e intercambiar datos. Esta tecnología está creando un ecosistema de dispositivos inteligentes que interactúan entre sí y con los humanos, mejorando la eficiencia y nuestra calidad de vida. En el sector industrial, el IoT permite el mantenimiento predictivo de maquinaria, optimizando la producción. En los hogares, los asistentes virtuales y los dispositivos inteligentes hacen nuestras vidas más cómodas y seguras.",
+      "autor": "Diego Castro",
+      "fecha": "6 de agosto de 2025"
+    },
+    {
+      "titulo": "Big Data: El combustible de la toma de decisiones",
+      "informacion_it": "El **Big Data** se refiere a conjuntos de datos tan grandes y complejos que las herramientas de procesamiento tradicionales no son suficientes para gestionarlos. La verdadera importancia del *big data* no es solo el volumen de información, sino lo que se puede hacer con ella. Al analizar estos datos, las empresas pueden obtener **conocimientos valiosos** sobre el comportamiento del cliente, las tendencias del mercado y la eficiencia operativa. Esta información es el combustible que impulsa la **toma de decisiones estratégicas**, permitiendo a las organizaciones ser más proactivas y menos reactivas en un entorno de negocios competitivo.",
+      "autor": "Andrea Vargas",
+      "fecha": "6 de agosto de 2025"
+    }
+  ]
+}
