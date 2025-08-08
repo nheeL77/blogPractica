@@ -1,20 +1,32 @@
-//ruta de informacion
+//ruta de informacion por lo general una url
 const jsonurl = "data.json" 
 
-//seleccionamos el contenedor donde se mostraran los articulos
-const articulosContainer = document.getElementById("articulos") 
-
 //funcion para obtener y mostrar los datos
-async function cargarArticulos() {
+async function cargarArticulos() { 
     const response = await fetch(jsonurl) 
-        if(response.ok != true) {
-            alert("Hubo un error en el fetch")
-            return false
-        } 
+    if(response.ok != true) {
+        console.log("Hubo un error en el fetch")
+        return false
+    } 
+    
+    const data = await response.json()
+    return data
+};
 
-        const data = await response.json()
-        console.log(data)
-}
+
+async function setInformation() {
+    const articulosContainer = document.getElementById("articulos")  //seleccionamos el contenedor donde se mostraran los articulos
+    
+    const editCards = await cargarArticulos()
+
+    if (Array.isArray(editCards)) {
+        //     editCards.forEach(function (articulo) {
+        //     }
+        // )
+    }    
+};
+
+setInformation();
 
 // cargarArticulos();
 
@@ -36,4 +48,12 @@ const backgroundBody = document.querySelector('body'); //document.body
     themeDark.classList.toggle('displaynone');
     themeLight.classList.toggle('displaynone');
 });    
-    
+
+const newTitle = document.querySelectorAll('h4');
+const titleArticle = document.querySelector('.editTitle');
+    titleArticle.addEventListener('change', (event) => {    //event seria el valor de change //function(event){ } "funcionaria de la misma manera"
+        const valueInput = event.target.value;
+        newTitle.forEach(function (elemento){
+            elemento.textContent = valueInput;
+        })
+    });
