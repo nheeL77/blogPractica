@@ -6,21 +6,34 @@
 }
 
 :root{
-    --color-principal: oklch(86.995% 0.0001 271.152);
-    --color-shadow:  rgba(182, 182, 182, 0.784);
+    --color-nav: oklch(86.995% 0.0001 271.152);
+    --color-bodybackgroud: #f0f0f0;
     --color-buttons: rgba(154, 162, 164, 0.754);
     --color-border:  rgba(128, 128, 128, 0.213);
     --color-title: rgba(0, 0, 0, 0.654);
 }
 
+.darkmode {
+    --color-nav: oklch(30.519% 0.00003 271.152);
+    --color-bodybackgroud: #4b4b4b;
+    --color-buttons: rgba(234, 234, 234, 0.754);
+    --color-border:  rgba(128, 128, 128, 0.213);
+    --color-title: rgba(222, 222, 222, 0.654);
+}
+
+.displaynone{
+    display: none;
+    border: none;
+}
+
 body {
-    background-color: #f0f0f0;
+    background-color: var(--color-bodybackgroud);
     margin: 0;
     overflow: scroll;
 }
 
 .navegacion {
-    background-color:var(--color-principal);
+    background-color:var(--color-nav);
     display: flex;
     flex-direction: column;
     box-shadow: 0 5px 5px rgba(182, 182, 182, 0.784);
@@ -51,12 +64,22 @@ main {
     margin: 0 auto;
 }
 
+.buttonBright {
+    border: none;
+    background-color: var(--color-bodybackgroud);
+}
+
+.containerTitle {
+    display: flex;
+}
+
 main p {
     padding-top: 10px;
 }
 
-main > .title {
+main .title {
     font-size: 24px;
+    padding-left: 10px;
 }
 
 .description {
@@ -86,7 +109,7 @@ main > .title {
 }
 
 .lista li:hover {
-    border: 2px outset rgba(128, 128, 128, 0.654);
+    border: 2px solid rgba(128, 128, 128, 0.654);
     color: rgba(0, 0, 0, 0.654);
     cursor: pointer;
 }
@@ -136,7 +159,7 @@ article div p{
 
 article footer {
     padding: 6px 20px;
-    color: rgb(29, 29, 121);
+    color: rgb(0, 0, 218);
 }
 
 .formulario {
@@ -148,7 +171,7 @@ article footer {
 }
 
 .formulario h3 {
-    margin: 7px 0 10px 20px;
+    margin: 0px 0 15px 20px;
 }
 
 .formulario span {
@@ -163,7 +186,7 @@ article footer {
 
 .formulario fieldset{
     border-style: none;
-    background-color: #f0f0f0;
+    background-color: var(--color-bodybackgroud);
     border-radius: 25px;
     padding:0 20px;
 }
@@ -254,7 +277,7 @@ color: rgba(197, 197, 197, 0.858);
 }
 
 .piedePagina {
-    background-color: var(--color-principal);
+    background-color: var(--color-nav);
     padding: 16px;
 }
 

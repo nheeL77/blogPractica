@@ -6,7 +6,8 @@
     <meta name="description" content="Blog Personal">
     <link rel="icon" type="image/webp" href="https://microblog.lexingtonthemes.com/_astro/5.hpujJxhC_1Rv89X.webp">
     <link rel="stylesheet" href="./style.css">
-    <script src="./main.js"></script>
+    <!-- defer en el js para la carga diferida -->
+    <script src="./main.js" defer></script>
     <title>practice.blog</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +24,13 @@
     </header>
 
     <main>
-        <h2 class="title">building personal blog</h2>
+        <div class="containerTitle">
+            <button class="buttonBright">
+                <img src="/img/brightness-down.svg" class= "buttonDark displaynone" alt="buttonDark">
+                <img src="/img/brightness-up.svg" class="buttonLight" alt="buttonLight">
+            </button>
+            <h2 class="title">building personal blog</h2>
+        </div>
         <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptas quidem facilis repudiandae ad dolore sunt explicabo, sit aliquam maiores adipisci non molestias odit. Iusto obcaecati animi tenetur ratione consequatur.
         Quo voluptatem cumque quod beatae amet alias, veniam facere placeat sequi similique iste fugiat eos nihil consequuntur molestiae rem fugit. Quaerat sapiente, iste in vero earum nisi aspernatur vel voluptas!</p>
         <ul class="lista">
