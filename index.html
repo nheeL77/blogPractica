@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Blog Personal">
-    <link rel="icon" type="image/webp" href="https://microblog.lexingtonthemes.com/_astro/5.hpujJxhC_1Rv89X.webp">
+    <link rel="icon" type="image/svg" href="./img/brightness-up.svg">
     <link rel="stylesheet" href="./style.css">
     <!-- defer en el js para la carga diferida -->
     <script src="./main.js" defer></script>
@@ -132,12 +132,13 @@
                     <div class="containerForm">
                         <label>
                             <span>Nombre:</span>
-                            <input type="text" name="nombre" placeholder="Marcelo Gonzalez" required>
+                            <input type="text" name="nombre" placeholder="Marcelo Gonzalez" value="nahuel" >
+                            </label>
                         </label>
 
                         <label>
                             <span>Email:</span>
-                            <input type="email" name="email" placeholder="tumail@example.com" required>
+                            <input type="email" name="email" placeholder="tumail@example.com" value="mail@example" >
                         </label>
                     </div>
                 </fieldset>
@@ -147,12 +148,12 @@
                     <div class="containerForm">
                         <label>
                             <span>Telefono:</span>
-                            <input type="tel" name="tel" placeholder="(341) 2345678">
+                            <input type="tel" name="tel" placeholder="(341) 2345678" value="34343434" >
                         </label>
 
                         <label>
                             <span>Fecha de nacimiento:</span>
-                            <input class=date type="date" name="fechaNacimiento" required>
+                            <input class=date type="date" name="fechaNacimiento" value="2025-09-27" >
                         </label>
                     </div>
                 </fieldset>
@@ -164,8 +165,9 @@
                             <label for="motivo">
                                 Motivo
                             </label>
-                            <select name="motivo" id="motivo">
-                                <option>Trabajo</option>
+                            <select name="motivo" id="motivo" required>
+                                <option  value="" disabled>Seleccione un motivo</option>
+                                <option selected>Trabajo</option>
                                 <option>Estudio</option>
                                 <option>Otros</option>
                             </select>
@@ -173,7 +175,7 @@
 
                         <div>
                             <label for="lenguajes-id">Sobre que lenguaje?</label>
-                            <input name="lenguajes" id="lenguajes-id" list="list-lenguajes" placeholder="Javascript">
+                            <input name="lenguajes" id="lenguajes-id" list="list-lenguajes" value="Javascript" placeholder="Javascript" required>
                             <datalist id="list-lenguajes">
                                 <option value="Javascript"></option>
                                 <option value="Python"></option>

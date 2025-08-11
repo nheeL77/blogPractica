@@ -214,13 +214,16 @@ article footer {
     padding: 15px 0 15px 15px;
 }
 
-.date {
+.date::placeholder {
     color: rgba(197, 197, 197, 0.858);
 }
 
-.formulario fieldset input::placeholder{
-color: rgba(197, 197, 197, 0.858);
+#lenguajes-id::placeholder{
+    color: rgba(197, 197, 197, 0.858);
 }
+/* .formulario fieldset input::placeholder{
+color: rgba(197, 197, 197, 0.858);
+} */
 
 .formulario fieldset select {
     border-radius: 20px;
@@ -228,15 +231,15 @@ color: rgba(197, 197, 197, 0.858);
     width: 100%;
     min-width: 200px;
     padding: 7px 7px;
-    color: rgba(197, 197, 197, 0.858);
 }
+
+
 
 .containerForm {
     display: flex;
     gap: 8px 30px;
     margin-bottom: 7px;
     flex-wrap: wrap;
-
 }
 
 .buttones {
