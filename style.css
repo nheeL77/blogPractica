@@ -214,8 +214,16 @@ article footer {
     padding: 15px 0 15px 15px;
 }
 
+.date {
+    cursor: pointer;
+}
+
 .date::placeholder {
     color: rgba(197, 197, 197, 0.858);
+}
+
+#lenguajes-id{
+    cursor: default;
 }
 
 #lenguajes-id::placeholder{
@@ -233,8 +241,6 @@ color: rgba(197, 197, 197, 0.858);
     padding: 7px 7px;
 }
 
-
-
 .containerForm {
     display: flex;
     gap: 8px 30px;
@@ -242,10 +248,17 @@ color: rgba(197, 197, 197, 0.858);
     flex-wrap: wrap;
 }
 
-.buttones {
+.buttones-flex {
     display: flex;
     justify-content: center;
     gap: 20px;
+}
+
+.buttones p {
+    margin: 0;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
 }
 
 .buttones button {
