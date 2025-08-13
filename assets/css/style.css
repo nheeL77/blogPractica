@@ -126,7 +126,7 @@ main .title {
 }
 
 .lista li:hover {
-    border: 2px groove var(--color-li);
+    border: 2px ridge var(--color-li);
     color: var(--color-title);
     cursor: pointer;
 }

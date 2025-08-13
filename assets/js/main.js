@@ -24,7 +24,7 @@ async function setInformation() {
 
       newArticle.innerHTML = `
                                 <header>
-                                    <img src="./assets/img/6.Dsq_1pG4_14nmYx.webp" alt="Manos blancas roboticas sobre teclado" width="300" height="180">
+                                    <img src="${articulo.imagen}" alt="Manos blancas roboticas sobre teclado" width="300" height="180">
                                 </header>
                                 <div>
                                     <h4>${articulo.titulo}</h4>
