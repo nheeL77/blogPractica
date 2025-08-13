@@ -24,7 +24,7 @@ async function setInformation() {
 
       newArticle.innerHTML = `
                                 <header>
-                                    <img src="./img/6.Dsq_1pG4_14nmYx.webp" alt="Manos blancas roboticas sobre teclado" width="300" height="180">
+                                    <img src="./assets/img/6.Dsq_1pG4_14nmYx.webp" alt="Manos blancas roboticas sobre teclado" width="300" height="180">
                                 </header>
                                 <div>
                                     <h4>${articulo.titulo}</h4>
@@ -41,26 +41,6 @@ async function setInformation() {
 
 setInformation();
 
-///////////////////      Funcion light/dark mode      ////////////////////////////////
-
-const themeDark = document.querySelector(".buttonDark");
-const themeLight = document.querySelector(".buttonLight");
-
-const darkBody = document.querySelector(".buttonBright");
-const backgroundBody = document.querySelector("body"); //document.body
-darkBody.addEventListener("click", () => {
-  // backgroundBody.style.backgroundColor='black';  ///// directo al background
-
-  // const result = backgroundBody.classList.contains('darkmode') ///// manipulamos la clase
-  // if (result == true) {
-  //     backgroundBody.classList.remove('darkmode')
-  // } else {
-  //     backgroundBody.classList.add('darkmode')
-  // }
-  backgroundBody.classList.toggle("darkmode"); ///// simplifica la funcion de arriba
-  themeDark.classList.toggle("displaynone");
-  themeLight.classList.toggle("displaynone");
-});
 
 ///////////////////      Funcion para editar textos      ///////////////////////////
 

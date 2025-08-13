@@ -6,24 +6,25 @@
 }
 
 :root{
-    --color-nav: oklch(86.995% 0.0001 271.152);
-    --color-bodybackgroud: #f0f0f0;
-    --color-buttons: rgba(154, 162, 164, 0.754);
-    --color-border:  rgba(128, 128, 128, 0.213);
-    --color-title: rgba(0, 0, 0, 0.654);
+    --color-title: #0d0d0db4;
+    --color-border:  #383838;
+    --color-nav: #c6c6c6;
+    --color-bodybackgroud: #dcdcdc;
+    --color-li: #13ddda8b;
+    --color-shadow: rgba(0, 0, 0, 0.311);
 }
 
 .darkmode {
     --color-nav: oklch(30.519% 0.00003 271.152);
     --color-bodybackgroud: #4b4b4b;
-    --color-buttons: rgba(234, 234, 234, 0.754);
+    --color-buttons: rgba(129, 129, 129, 0.754);
     --color-border:  rgba(128, 128, 128, 0.213);
     --color-title: rgba(222, 222, 222, 0.654);
+
 }
 
 .displaynone{
     display: none;
-    border: none;
 }
 
 body {
@@ -31,13 +32,20 @@ body {
     margin: 0;
     overflow: scroll;
 }
+body h1 {
+    cursor:pointer;
+}
 
 .navegacion {
     background-color:var(--color-nav);
     display: flex;
     flex-direction: column;
-    box-shadow: 0 5px 5px rgba(182, 182, 182, 0.784);
+    box-shadow: 0 5px 5px var(--color-shadow);
     padding: 15px 15px 7px 15px;
+}
+
+.navegacion h1 {
+    color: var(--color-title)
 }
 
 nav {
@@ -45,13 +53,13 @@ nav {
 }
 
 nav a {
-    color: blue;
+    color: var(--color-buttons);
     text-decoration: none;
     margin: 0 9px;
 }
 
 nav a:hover{
-    border-bottom:1px blue dotted;
+    border-bottom:1px groove var(--color-li);
 }
 
 nav a:active{
@@ -64,9 +72,16 @@ main {
     margin: 0 auto;
 }
 
-.buttonBright {
+.buttonLight {
     border: none;
     background-color: var(--color-bodybackgroud);
+    cursor: pointer;
+}
+
+.buttonDark {
+    border: none;
+    background-color: var(--color-bodybackgroud);
+    cursor: pointer;
 }
 
 .containerTitle {
@@ -80,6 +95,8 @@ main p {
 main .title {
     font-size: 24px;
     padding-left: 10px;
+    cursor: default;
+    color: var(--color-title);
 }
 
 .description {
@@ -99,34 +116,36 @@ main .title {
 }
 
 .lista li {
-    background-color: var(--color-buttons);
-    color: #f0f0f0;
+    background-color: rgba(135, 135, 135, 0.459);
+    color: var(--color-title);
     font-weight: 600;
     padding: 9px 20px;
     border-radius: 40px;
-    border: 2px solid var(--color-border); 
+    border: 2px solid var(--color-li); 
     margin: auto;
 }
 
 .lista li:hover {
-    border: 2px solid rgba(128, 128, 128, 0.654);
-    color: rgba(0, 0, 0, 0.654);
+    border: 2px groove var(--color-li);
+    color: var(--color-title);
     cursor: pointer;
 }
 
 #articulos {
     display: grid;
     gap: 23px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
     margin-bottom: 50px;
     justify-content: center;
+    color: var(--color-title);
 }
 
 article {
-    background-color: rgb(243, 243, 243);
+    background-color: var(--color-nav);
     border-radius: 6px;
     overflow: hidden;
-    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.298);
+    box-shadow: 4px 4px 5px var(--color-shadow);
+    cursor: pointer;
 }
 
 article img {
@@ -147,7 +166,7 @@ article div{
 article div h4 {
 font-size: 20px;
 letter-spacing: 1px;
-color: rgba(0, 0, 0, 0.652);
+color: var(--color-title);
 text-wrap: balance;
 margin: 8px 0;
 }
@@ -159,11 +178,12 @@ article div p{
 
 article footer {
     padding: 6px 20px;
-    color: rgb(0, 0, 218);
+    color: var(--color-title);
+    background-color: rgba(135, 135, 135, 0.459);
 }
 
 .formulario {
-    background-color: var(--color-buttons);
+    background-color: var(--color-nav);
     border-radius: 35px;
     padding: 15px;
     max-width: 600px;
@@ -172,10 +192,12 @@ article footer {
 
 .formulario h3 {
     margin: 0px 0 15px 20px;
+    color: var(--color-title);
 }
 
 .formulario span {
     font-size: 14px;
+    color: var(--color-title);
 }
 
 .formulario form {
@@ -204,38 +226,29 @@ article footer {
     gap: 6px;
     margin-bottom: 5px;
     font-size: 14px;
+    color: var(--color-title);
 }
 
 .formulario fieldset input {
     border-radius: 20px;
     height: 25px;
-    border:0.5px var(--color-border) inset;
+    border:0.5px solid var(--color-li);
     max-width: 300px;
     padding: 15px 0 15px 15px;
+    background-color: #f0f0f0;
 }
 
 .date {
     cursor: pointer;
 }
 
-.date::placeholder {
-    color: rgba(197, 197, 197, 0.858);
-}
-
 #lenguajes-id{
     cursor: default;
 }
 
-#lenguajes-id::placeholder{
-    color: rgba(197, 197, 197, 0.858);
-}
-/* .formulario fieldset input::placeholder{
-color: rgba(197, 197, 197, 0.858);
-} */
-
 .formulario fieldset select {
     border-radius: 20px;
-    border:0.5px solid var(--color-border);
+    border:0.5px solid var(--color-li);
     width: 100%;
     min-width: 200px;
     padding: 7px 7px;
@@ -267,29 +280,32 @@ color: rgba(197, 197, 197, 0.858);
     border-radius: 20px;
     width: 100%;
     max-width: 150px;
-    border:0.5px solid var(--color-border);
+    border:2px solid var(--color-li);
     background-color: var(--color-buttons);
-    transition: background-color 200ms ease;
-    color: #f0f0f0;
+    color: var(--color-title);
     font-size: 16px;
 }
 
 .buttones button[type="submit"]:hover{
-    border: 1px outset rgba(128, 128, 128, 0.654);
+    border: 2px solid var(--color-li);
     color: green;
     cursor: pointer;
     font-weight: 500;
+    transition: background-color 600ms ease;
+    background-color: var(--color-nav);
 }
 
 .buttones button[type="reset"]:hover{
-    border: 1px outset rgba(128, 128, 128, 0.654);
+    border: 2px solid var(--color-li);
     color: red;
     cursor: pointer;
     font-weight: 500;
+    transition: background-color 600ms ease;
+    background-color: var(--color-nav);
 }
 
 .buttones button:active{
-    background-color: var(--color-border);
+    background-color: var(--color-nav);
 }
 
 .piedePagina {
@@ -299,4 +315,5 @@ color: rgba(197, 197, 197, 0.858);
 
 footer p {
     font-size: small;
+    color: var(--color-title);
 }
