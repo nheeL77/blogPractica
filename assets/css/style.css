@@ -66,6 +66,43 @@ nav a:active{
     color: grey;
 }
 
+.containerInput {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 12px;
+    ;
+}
+
+.errorUsario {
+    color: red;
+}
+
+.mensajeBienvenida {
+    color: var(--color-li);
+    padding: 5px 0;
+    margin-bottom: 7px;
+    border: 2px solid var(--color-li);
+    display: flex;
+    justify-content: center;
+    text-shadow: #ffffff 1px 0 10px;
+    font-size: large;
+}
+
+#okey {
+    border-radius: 50%;
+    padding: 3px;
+    border: 1px solid green;
+    background-color: rgba(89, 255, 47, 0.785);
+}
+
+#back {
+    border-radius: 50%;
+    padding: 3px 6.5px;
+    border: 1px solid red;
+    background-color: rgba(255, 0, 0, 0.500);
+}
+
 main {
     padding: 15px;
     max-width: 1200px;

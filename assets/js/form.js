@@ -1,6 +1,6 @@
 //////////////////     Funcion para capturar el submit      ///////////////////////////
 
-const formulario = document.querySelector("form");
+const formulario = document.getElementById("formContacto");
 
 formulario.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -97,7 +97,6 @@ function crearMensajeDeError(campo, mensajeDeError) {
   const input = document.querySelector(`input[name="${campo}"]`);
   if (input) {
     const parent = input.parentElement; // seleccionamos elemento padre del input
-    // parent.style.border = "1px solid red";
     const newElement = document.createElement("p"); // creamos elemento p donde insertamos el mensaje de error
     newElement.classList.add("mensaje-de-error");
     newElement.style.color = "red";

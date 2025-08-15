@@ -10,6 +10,7 @@
     <script src="./assets/js/main.js" defer></script>
     <script src="./assets/js/form.js" defer></script>
     <script src="/assets/js/localStorage.js" defer></script>
+    <script src="/assets/js/login.js" defer></script>
     <title>practice.blog</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,7 +39,21 @@
         </div>
         <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptas quidem facilis repudiandae ad dolore sunt explicabo, sit aliquam maiores adipisci non molestias odit. Iusto obcaecati animi tenetur ratione consequatur.
         Quo voluptatem cumque quod beatae amet alias, veniam facere placeat sequi similique iste fugiat eos nihil consequuntur molestiae rem fugit. Quaerat sapiente, iste in vero earum nisi aspernatur vel voluptas!</p>
-        <input type="text" name="articleTitle" class="editTitle">
+        <div class="containerInput">
+            <div>
+                <form method="post" action="/" id="nombreDeUsuario">
+                    <label for="nombreUsuario">Ingresa tu usuario:</label>
+                    <input type="text" name="nombreUsuario" id="nombreUsuario">
+                    <button type="submit" id="okey">Ok</button>
+                    <button type="reset" id="back">X</button>
+                </form>
+            </div>
+           
+            <div>        
+                <label for="articleTitle">Edite los titulos:</label>
+                <input type="text" name="articleTitle" id="articleTitle" class="editTitle">
+            </div>
+        </div>
         <ul class="lista">
             <li style="--color-custom: rgba(0, 0, 0, 0.654);">Frameworks</li>
             <li>Development</li>
@@ -55,12 +70,11 @@
                     <img src="./assets/img/humanhand.jpg" alt="Manos blancas roboticas sobre teclado" width="300" height="180">
                 </header>
                 <div>
-                    <h4>Ayudando a tu website tener googly-eyed</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quasi tenetur maxime modi repellendus error obcaecati iure sunt cupiditate omnis aut non recusandae harum aliquam, commodi voluptatum, fugiat suscipit laboriosam.
-                    A amet exercitationem excepturi fuga temporibus ullam, praesentium ipsam. Commodi, magni quibusdam facere.</p>
+                    <h4>IA para todos: democratizando el acceso a la tecnologí</h4>
+                    <p>Las herramientas de inteligencia artificial ya no son exclusivas de grandes corporaciones. Gracias a plataformas y recursos de código abierto, cualquier persona puede experimentar con la IA, creando aplicaciones, modelos de aprendizaje automático y soluciones innovadoras para resolver problemas cotidianos.</p>
                 </div>
                 <footer>
-                    <small>Henry Lee - Sat Jan 06</small>
+                    <small>Nahuel Ivaan - Mon Aug 25</small>
                 </footer>
             </article>
 
@@ -69,13 +83,12 @@
                     <img src="./assets/img/4.KHEarGYS_2crxEh.webp" alt="Manos blancas roboticas sobre teclado" width="300" height="180">
                 </header>
                 <div>
-                    <h4>Ayudando a tu website tener googly-eyed</h4>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti aut cumque reprehenderit soluta quis ut aperiam voluptatibus ratione rerum reiciendis eum veritatis, quae blanditiis? Saepe quaerat neque eaque eveniet numquam.
-                    Sequi suscipit modi quae eaque. Incidunt ducimus, blanditiis laborum vel voluptates.
+                    <h4>Vehículos autónomos: la IA toma el volante</h4>
+                    <p>La tecnología de conducción autónoma, impulsada por la inteligencia artificial, está a punto de transformar el transporte. Al procesar datos en tiempo real de sensores y cámaras, estos vehículos pueden navegar por calles y carreteras de forma segura, prometiendo reducir accidentes y optimizar el flujo de tráfico en las ciudades.
                     </p>
                 </div>
                 <footer>
-                    <small>Henry Lee - Sat Jan 06</small>
+                    <small>Sebastian Marin - Thu Sep 25</small>
                 </footer>
             </article>
 
@@ -84,12 +97,11 @@
                     <img src="./assets/img/3.DgH2_aUP_Z2tpMAQ.webp" alt="Manos blancas roboticas sobre teclado" width="300" height="180">
                 </header>
                 <div>
-                    <h4>Ayudando a tu website tener googly-eyed</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque quisquam repudiandae reiciendis officiis aliquid quam numquam, at accusamus sequi quae ipsa aspernatur repellat omnis quo dolorum pariatur officia corrupti nemo.
-                    Voluptates aperiam minima amet, omnis?</p>
+                    <h4>Diagnóstico médico con IA: precisión que salva vidas</h4>
+                    <p>La inteligencia artificial está revolucionando la medicina, acelerando la detección de enfermedades con una precisión sin precedentes. Algoritmos avanzados analizan imágenes médicas y datos de pacientes, ayudando a los profesionales de la salud a identificar patologías de forma temprana y a desarrollar tratamientos más efectivos y personalizados.</p>
                 </div>
                 <footer>
-                    <small>Franz Hermann - Sat Jan 06</small>
+                    <small>Nahuel Ivaan - Mon Aug 25</small>
                 </footer>
             </article>
 
@@ -98,11 +110,11 @@
                     <img src="./assets/img/code.jpg" alt="Manos blancas roboticas sobre teclado" width="300" height="180">
                 </header>
                 <div>
-                    <h4>Ayudando a tu website tener googly-eyed</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi voluptatem unde et recusandae dolor quia ex impedit distinctio facilis, qui error vel odio pariatur sit. Laboriosam mollitia asperiores a enim? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, itaque. Provident veritatis modi dignissimos qui necessitatibus.</p>
+                    <h4>La ética en la IA: equilibrando innovación con responsabilidad social</h4>
+                    <p>A medida que la inteligencia artificial se integra en nuestra sociedad, surgen importantes preguntas éticas. Es crucial garantizar que los sistemas de IA sean transparentes, justos y seguros, evitando sesgos y protegiendo la privacidad de los usuarios para construir un futuro digital equitativo y confiable.</p>
                 </div>
                 <footer>
-                    <small>Henry Lee - Sat Jan 06</small>
+                    <small>Sebastian Marin - Thu Sep 25</small>
                 </footer>
             </article>
 
@@ -111,12 +123,11 @@
                     <img src="./assets/img/drone.webp" alt="Manos blancas roboticas sobre teclado" width="300" height="180">
                 </header>
                 <div>
-                    <h4>Ayudando a tu website tener googly-eyed</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, facere quae? Excepturi impedit quo suscipit nobis obcaecati fugit! Veniam quasi in fugiat dignissimos aliquam! Culpa non consequuntur voluptatibus nemo debitis!
-                    Odit, hic. Explicabo voluptatem vero dignissimos corrupti fuga placeat aperiam, laborum at fugiat repellat. A cumque voluptatem, nulla!</p>
+                    <h4>La IA redefine el arte: algoritmos que crean obras maestras?</h4>
+                    <p>La inteligencia artificial ha trascendido la lógica para adentrarse en el mundo de la creatividad. Herramientas y programas impulsados por IA están siendo utilizados por artistas para generar piezas únicas, desde pinturas hasta composiciones musicales, desafiando la noción tradicional de autoría y el proceso creativo.</p>
                 </div>
                 <footer>
-                    <small>Henry Lee - Sat Jan 06</small>
+                    <small>Nahuel Ivaan - Mon Aug 25</small>
                 </footer>
             </article>
 
@@ -125,19 +136,19 @@
                     <img src="./assets/img/think.webp" alt="Manos blancas roboticas sobre teclado" width="300" height="180">
                 </header>
                 <div>
-                    <h4>Ayudando a tu website tener googly-eyed</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae voluptatem adipisci natus? Doloremque aut vitae, ipsam minus quia assumenda quibusdam et sit facilis facere, perferendis at, nesciunt mollitia officia temporibus?
-                    Debitis, laborum. Perferendis obcaecati omnis optio sapiente explicabo cumque, labore fugit pariatur modi! Provident voluptatem dolore</p>
+                    <h4>El futuro del trabajo: IA como compañera, no reemplazo</h4>
+                    <p>En lugar de sustituir empleos, la inteligencia artificial se está consolidando como una poderosa aliada. Al automatizar tareas repetitivas y monótonas, libera a los trabajadores para que se concentren en roles más estratégicos y creativos, impulsando la productividad y el desarrollo de nuevas habilidades.
+                    </p>
                 </div>
                 <footer>
-                    <small>Franz Hermann - Sat Jan 06</small>
+                    <small>Sebastian Marin - Thu Sep 25</small>
                 </footer>
             </article>
         </section>
 
         <section class="formulario">
             <h3>Formulario de Contacto</h3>
-            <form method="post" action="/">
+            <form method="post" action="/" id="formContacto">
                 <fieldset>
                     <p>Informacion Personal</p>
                     <div class="containerForm">
@@ -199,8 +210,8 @@
                 
                 <fieldset class="buttones">
                     <div class="buttones-flex">
-                    <button type="submit">Enviar</button>
-                    <button type="reset">Reset</button>
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Reset</button>
                     </div>
                 </fieldset>
             </form>
