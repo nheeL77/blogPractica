@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toDo List</title>
+    <link rel="stylesheet" href="/assets/css/todo-list.css">
+    <script src="/assets/js/todo-list.js" defer></script>
+</head>
+<body>
+    <main class="main">
+        <div class="title">
+            <h2>To-Do List</h2>
+            <img src="/assets/img/list-check.svg" alt="listCheck">
+        </div>
+
+        <form method="post" action="/" class="formTarea">
+            <label> 
+                <input type="text" name="tarea" placeholder="Agregar tarea">
+                <button type="submit"> Listo </button> 
+            </label>
+        </form>
+
+        <ul class="listaTareas">
+        </ul>
+    </main>
+</body>
+</html>
