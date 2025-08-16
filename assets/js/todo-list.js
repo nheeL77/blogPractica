@@ -14,8 +14,8 @@ formList.addEventListener("submit", (event) => {
     event.target.reset();
     createLi.innerHTML = `
       <div class="nuevaTarea">  
-        <input type="checkbox">
-        <p>${tareaCapitalizada}</p>
+        <input type="checkbox" id="checkBox">
+        <p id="tareaLista">${tareaCapitalizada}</p>
         <button class="eliminarTarea">Eliminar</button>
       </div>
         `;
@@ -30,6 +30,16 @@ formList.addEventListener("submit", (event) => {
       containerBotton.remove();
     });
   });
+
+  const checkBox = document.getElementById("checkBox")
+  const tareaLista = document.getElementById('tareaLista')
+  checkBox.addEventListener('change', () => {
+    if(checkBox.checked) {
+      tareaLista.classList.add('tachar')
+    } else {
+      tareaLista.classList.remove('tachar')
+    }
+  })
 });
 
 function validarTarea(tarea) {
@@ -47,6 +57,5 @@ function capitalizarText(text) {
   return '';
 }
 
-// ESTILAR LI
-// FUNCION ELIMINAR TAREA
+
 // CHECKBOX TACHA TAREA
