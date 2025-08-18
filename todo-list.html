@@ -19,12 +19,10 @@
         </div>
 
         <form method="post" action="/" class="formTarea">
-            <label> 
-                <input type="text" name="tarea" placeholder="Agregar tarea">
+                <input type="text" name="tarea" placeholder="Agregar tarea" required>
                 <button type="submit"> Listo </button> 
-            </label>
         </form>
-
+        <p class="mensajeError displayNone" >Tarea invalida</p>
         <ul class="listaTareas">
         </ul>
     </main>

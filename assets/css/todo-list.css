@@ -41,27 +41,26 @@ main {
 
 .formTarea {
     display: flex;
-    justify-content: center;
-}
-
-.formTarea label {
+    justify-content: space-between;
     border-radius: 50px;
     background-color: var(--color-inputTarea);
+    max-width: 100%;
+    margin: 0 30px;
 }
 
-label input {
+form input {
     background-color: var(--color-inputTarea);
     padding: 6px 6px 6px 18px;
     border-radius: 50px;
     color: gray;
 }
 
-label input:focus {
+form input:focus {
     outline: none;
     background-color: var(--color-inputTarea);
 }
 
-label button {
+form button {
     background-color: var(--color-botton);
     border-radius: 50px;
     padding: 15px 32px;
@@ -70,8 +69,19 @@ label button {
     cursor: pointer;
 }
 
-label button:hover {
+form button:hover {
     background-color: var(--color-bottonActive);
+}
+
+.mensajeError {
+    color: red;
+    padding-left: 40px;
+    margin: 5px 0;
+    font-size: small;
+}
+
+.displayNone {
+    display: none;
 }
 
 ul {
