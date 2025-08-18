@@ -7,10 +7,11 @@
     padding: 0;
 }
 
-:root{
+:root {
     --color-inputTarea: #f2f3f4;
     --color-backgroud: #E3DAC9;
     --color-botton: #d5b874;
+    --color-bottonActive: #bd9c4ee9;
     --color-text: rgba(0, 0, 0, 0.442);
 }
 
@@ -55,7 +56,7 @@ label input {
     color: gray;
 }
 
-label input:focus{
+label input:focus {
     outline: none;
     background-color: var(--color-inputTarea);
 }
@@ -66,7 +67,11 @@ label button {
     padding: 15px 32px;
     color: var(--color-text);
     font-weight: bold;
+    cursor: pointer;
+}
 
+label button:hover {
+    background-color: var(--color-bottonActive);
 }
 
 ul {
@@ -74,23 +79,26 @@ ul {
     display: flex;
     align-items: center;
     flex-direction: column;
+    max-width: 330px;
+    margin: 10px auto;
 }
 
 ul li {
     list-style: none;
     padding: 5px 0;
-}
-
-.nuevaTarea {
     display: flex;
     gap: 20px;
     justify-content: space-between;
+    width: 100%;
 }
 
-#tareaLista {
-    margin:0;
+.tareaLista {
+    margin: 0;
     color: var(--color-text);
     font-size: 20px;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .eliminarTarea {
@@ -103,11 +111,10 @@ ul li {
     padding-top: 4px;
 }
 
-.eliminarTarea:hover{
+.eliminarTarea:hover {
     border-bottom: 1px solid rgba(255, 0, 0, 0.484);
 }
 
 .tachar {
     text-decoration: line-through;
 }
-
