@@ -18,11 +18,15 @@
             <img src="/assets/img/list-check.svg" alt="listCheck">
         </div>
 
-        <form method="post" action="/" class="formTarea">
-                <input type="text" name="tarea" placeholder="Agregar tarea" required>
-                <button type="submit"> Listo </button> 
+        <div class="contadorContainer">
+            <p class="contador">[0</p>
+            <p>/25]</p>
+        </div>
+        <form method="post" action="/" class="formTarea" autocomplete="off">
+                <input type="text" name="tarea" class="inputTarea" placeholder="Nueva tarea" required maxlength="25">
+                <button type="submit"> Agregar </button> 
         </form>
-        <p class="mensajeError displayNone" >Tarea invalida</p>
+        <p class="mensajeError displayNone">Tarea invalida</p>
         <ul class="listaTareas">
         </ul>
     </main>
